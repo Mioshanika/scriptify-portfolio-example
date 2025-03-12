@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const nav = document.getElementById('nav');
   const closeMenu = document.getElementById('close-menu');
   const navLinks = document.querySelectorAll('.nav__list a');
+  const orderBtnMobileMenu = document.querySelector('.order-btn-mobile-menu');
 
   function openMenu() {
     nav.classList.add('active');
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   burgerMenu.addEventListener('click', toggleMenu);
   menuToggle.addEventListener('click', toggleMenu);
   closeMenu.addEventListener('click', closeNavMenu);
+  orderBtnMobileMenu.addEventListener('click', closeNavMenu);
 
   navLinks.forEach(link => {
     link.addEventListener('click', closeNavMenu);
