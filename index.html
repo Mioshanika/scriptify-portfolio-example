@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/scriptify-portfolio-example/assets/favicon-DWktJM6M.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio landing" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -15,7 +16,7 @@
     <script type="module" crossorigin src="/scriptify-portfolio-example/index.js"></script>
     <link rel="modulepreload" crossorigin href="/scriptify-portfolio-example/assets/vendor-w3IWx05B.js">
     <link rel="stylesheet" crossorigin href="/scriptify-portfolio-example/assets/vendor-Oe9dJBh6.css">
-    <link rel="stylesheet" crossorigin href="/scriptify-portfolio-example/assets/index--1I2gvBI.css">
+    <link rel="stylesheet" crossorigin href="/scriptify-portfolio-example/assets/index-DxT8xPy-.css">
   </head>
   <body>
     <header class="page-header">
@@ -32,14 +33,14 @@
       <span class="header__logo-text">jefferson*</span>
     </a>
 
-    <button class="burger-menu" id="burger-menu">
+    <button class="burger-menu" id="burger-menu" aria-label="Burger Menu">
       <svg class="burger-menu__icon" width="28" height="28">
         <use href="/scriptify-portfolio-example/assets/sprite-BQb0ssgx.svg#icon-burger-menu"></use>
       </svg>
     </button>
 
     <nav class="nav" id="nav">
-      <button class="close-menu" id="close-menu">
+      <button class="close-menu" id="close-menu" aria-label="Close">
         <svg class="burger-menu__close-btn" width="28" height="28">
           <use href="/scriptify-portfolio-example/assets/sprite-BQb0ssgx.svg#icon-close-btn"></use>
         </svg>
@@ -55,7 +56,9 @@
       >
     </nav>
 
-    <button class="menu-toggle" id="menu-toggle">Menu</button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Main Menu">
+      Menu
+    </button>
 
     <a class="order-btn" href="#work-together">Order the project</a>
   </div>
@@ -147,6 +150,7 @@
           <img
             src="/scriptify-portfolio-example/assets/about-me-mobile-@1x-BLr5t7EC.jpg"
             alt="Lloyd Jefferson"
+            loading="lazy"
             width="343"
             height="500"
           />
@@ -156,7 +160,7 @@
     <ul class="about-me-accordion accordion-container">
       <li class="about-me-accordion__item ac">
         <h2 class="about-me-accordion__title ac-header">
-          <button type="button" class="ac-trigger">
+          <button type="button" class="ac-trigger" aria-label="Accordion1">
             About me
             <span class="about-me-accordion__icon">
               <svg class="about-me-icon-down" width="18" height="18">
@@ -193,7 +197,7 @@
       </li>
       <li class="about-me-accordion__item ac">
         <h2 class="about-me-accordion__title ac-header">
-          <button type="button" class="ac-trigger">
+          <button type="button" class="ac-trigger" aria-label="Accordion2">
             role
             <span class="about-me-accordion__icon">
               <svg class="about-me-icon-down" width="18" height="18">
@@ -212,7 +216,7 @@
       </li>
       <li class="about-me-accordion__item ac">
         <h2 class="about-me-accordion__title ac-header">
-          <button type="button" class="ac-trigger">
+          <button type="button" class="ac-trigger" aria-label="Accordion3">
             education
             <span class="about-me-accordion__icon">
               <svg class="about-me-icon-down" width="18" height="18">
@@ -241,25 +245,25 @@
     <div class="about-me-slider">
       <div class="about-me-swiper swiper">
         <ul class="about-me-swiper__wrapper swiper-wrapper">
-          <li class="about-me-swiper__slide swiper-slide">
+          <li class="about-me-swiper__slide swiper-slide" role="none">
             <span>HTML/CSS</span>
           </li>
-          <li class="about-me-swiper__slide swiper-slide">
+          <li class="about-me-swiper__slide swiper-slide" role="none">
             <span>JavaScript</span>
           </li>
-          <li class="about-me-swiper__slide swiper-slide">
+          <li class="about-me-swiper__slide swiper-slide" role="none">
             <span>React</span>
           </li>
-          <li class="about-me-swiper__slide swiper-slide">
+          <li class="about-me-swiper__slide swiper-slide" role="none">
             <span>Node.js</span>
           </li>
-          <li class="about-me-swiper__slide swiper-slide">
+          <li class="about-me-swiper__slide swiper-slide" role="none">
             <span>React Native</span>
           </li>
-          <li class="about-me-swiper__slide swiper-slide">
+          <li class="about-me-swiper__slide swiper-slide" role="none">
             <span>Soft skills</span>
           </li>
-          <li class="about-me-swiper__slide swiper-slide">
+          <li class="about-me-swiper__slide swiper-slide" role="none">
             <span>Angular</span>
           </li>
         </ul>
@@ -363,7 +367,7 @@
     <h2 class="project-main-title">Projects</h2>
     <div class="swiper-container">
       <ul class="swiper-wrapper">
-        <li class="swiper-slide">
+        <li class="swiper-slide" role="none">
           <div class="project-container">
             <div class="project-up">
               <ul class="projects-tags">
@@ -404,7 +408,7 @@
             </div>
           </div>
         </li>
-        <li class="swiper-slide">
+        <li class="swiper-slide" role="none">
           <div class="project-container">
             <div class="project-up">
               <ul class="projects-tags">
@@ -445,7 +449,7 @@
             </div>
           </div>
         </li>
-        <li class="swiper-slide">
+        <li class="swiper-slide" role="none">
           <div class="project-container">
             <div class="project-up">
               <ul class="projects-tags">
@@ -488,12 +492,12 @@
         </li>
       </ul>
       <div class="swiper-navigation">
-        <div class="swiper-button-prev">
+        <div class="swiper-button-prev" aria-label="Prev">
           <svg>
             <use xlink:href="/scriptify-portfolio-example/assets/sprite-BQb0ssgx.svg#icon-arrow-narrow-left" />
           </svg>
         </div>
-        <div class="swiper-button-next">
+        <div class="swiper-button-next" aria-label="Next">
           <svg>
             <use xlink:href="/scriptify-portfolio-example/assets/sprite-BQb0ssgx.svg#icon-arrow-narrow-right" />
           </svg>
@@ -509,7 +513,11 @@
     <ul class="accordion-wrapper faq-wrapper">
       <li class="ac ac-item faq-item">
         <h2 class="ac-header">
-          <button type="button" class="ac-trigger ac-trigger-extra">
+          <button
+            type="button"
+            class="ac-trigger ac-trigger-extra"
+            aria-label="Accordion1"
+          >
             What programming languages are most often used in your project?<span
               class="faq-toggle-button"
               ><svg class="faq-icon-up" width="20" height="20">
@@ -528,7 +536,11 @@
       </li>
       <li class="ac acx ac-faq-item">
         <h2 class="ac-header">
-          <button type="button" class="ac-trigger ac-btn-trigger">
+          <button
+            type="button"
+            class="ac-trigger ac-btn-trigger"
+            aria-label="Accordion2"
+          >
             What are the deadlines for the project?<span
               class="faq-toggle-button faq-toggle-button-project"
               ><svg class="faq-icon-up" width="20" height="20">
@@ -549,7 +561,7 @@
       </li>
       <li class="ac ac-item faq-item">
         <h2 class="ac-header">
-          <button type="button" class="ac-trigger">
+          <button type="button" class="ac-trigger" aria-label="Accordion3">
             What payment methods do you accept?<span class="faq-toggle-button"
               ><svg class="faq-icon-up" width="20" height="20">
                 <use href="/scriptify-portfolio-example/assets/sprite-BQb0ssgx.svg#icon-Icon-up"></use>
@@ -567,7 +579,7 @@
       </li>
       <li class="ac acx">
         <h2 class="ac-header">
-          <button type="button" class="ac-trigger">
+          <button type="button" class="ac-trigger" aria-label="Accordion4">
             How can I contact you?<span class="faq-toggle-button"
               ><svg class="faq-icon-up" width="20" height="20">
                 <use href="/scriptify-portfolio-example/assets/sprite-BQb0ssgx.svg#icon-Icon-up"></use>
@@ -585,7 +597,11 @@
       </li>
       <li class="ac ac-item">
         <h2 class="ac-header">
-          <button type="button" class="ac-trigger btn-trigger">
+          <button
+            type="button"
+            class="ac-trigger btn-trigger"
+            aria-label="Accordion5"
+          >
             Do you provide advice or support?<span
               class="faq-toggle-button faq-toggle-button-support"
               ><svg class="faq-icon-up" width="20" height="20">
@@ -606,7 +622,7 @@
       </li>
       <li class="ac acx">
         <h2 class="ac-header">
-          <button type="button" class="ac-trigger">
+          <button type="button" class="ac-trigger" aria-label="Accordion6">
             What does the process of developing a software product look like
             from idea to implementation?<span
               class="faq-toggle-button faq-toggle-button-extra"
@@ -635,74 +651,84 @@
       <ul class="covers-list">
         <li class="covers-item first">
           <img
-            src="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg"
-            srcset="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-DzPhIg_b.jpg 2x"
+            src="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg"
+            srcset="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-BcEfMdy4.jpg 2x"
             alt="Body Shape"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg"
-            srcset="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg 1x, /scriptify-portfolio-example/assets/english@2x-BMfOpF0P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg"
+            srcset="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg 1x, /scriptify-portfolio-example/assets/english@2x-Bk40y4TX.jpg 2x"
             alt="English"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg"
-            srcset="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-BBT3S_JD.jpg 2x"
+            src="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg"
+            srcset="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-Cv7WPUT1.jpg 2x"
             alt="Finances"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg"
-            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-CBqAWgQ3.jpg 2x"
+            src="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg"
+            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-Bh_YwsqM.jpg 2x"
             alt="Forms and Nature"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg"
-            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-Jti0sx8I.jpg 2x"
+            src="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg"
+            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-DOrqD2-0.jpg 2x"
             alt="Fruits Basket"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg"
-            srcset="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CpNqfd6P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg"
+            srcset="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CV1Bs5rs.jpg 2x"
             alt="Mimino"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg"
-            srcset="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-BPTYHjTO.jpg 2x"
+            src="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg"
+            srcset="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-CcEFWSZS.jpg 2x"
             alt="Online Business"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg"
-            srcset="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-Dsz2tV1n.jpg 2x"
+            src="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg"
+            srcset="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-DrTpDCJH.jpg 2x"
             alt="Organic"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg"
-            srcset="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-4zL8j0uh.jpg 2x"
+            src="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg"
+            srcset="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-Cbz-uMWD.jpg 2x"
             alt="Power Pulse"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg"
-            srcset="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-DJSFoZGb.jpg 2x"
+            src="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg"
+            srcset="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-ZkgWx9AX.jpg 2x"
             alt="Ukrainian"
             width="544"
             height="314"
+            loading="lazy"
           />
         </li>
 
@@ -710,293 +736,333 @@
 
         <li class="covers-item second">
           <img
-            src="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg"
-            srcset="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-BBT3S_JD.jpg 2x"
+            src="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg"
+            srcset="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-Cv7WPUT1.jpg 2x"
             alt="Finances"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg"
-            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-CBqAWgQ3.jpg 2x"
+            src="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg"
+            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-Bh_YwsqM.jpg 2x"
             alt="Forms and Nature"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg"
-            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-Jti0sx8I.jpg 2x"
+            src="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg"
+            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-DOrqD2-0.jpg 2x"
             alt="Fruits Basket"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg"
-            srcset="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CpNqfd6P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg"
+            srcset="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CV1Bs5rs.jpg 2x"
             alt="Mimino"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg"
-            srcset="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-BPTYHjTO.jpg 2x"
+            src="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg"
+            srcset="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-CcEFWSZS.jpg 2x"
             alt="Online Business"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg"
-            srcset="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-Dsz2tV1n.jpg 2x"
+            src="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg"
+            srcset="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-DrTpDCJH.jpg 2x"
             alt="Organic"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg"
-            srcset="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-4zL8j0uh.jpg 2x"
+            src="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg"
+            srcset="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-Cbz-uMWD.jpg 2x"
             alt="Power Pulse"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg"
-            srcset="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-DJSFoZGb.jpg 2x"
+            src="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg"
+            srcset="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-ZkgWx9AX.jpg 2x"
             alt="Ukrainian"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg"
-            srcset="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-DzPhIg_b.jpg 2x"
+            src="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg"
+            srcset="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-BcEfMdy4.jpg 2x"
             alt="Body Shape"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg"
-            srcset="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg 1x, /scriptify-portfolio-example/assets/english@2x-BMfOpF0P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg"
+            srcset="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg 1x, /scriptify-portfolio-example/assets/english@2x-Bk40y4TX.jpg 2x"
             alt="English"
             width="544"
             height="314"
+            loading="lazy"
           />
         </li>
 
         <li class="covers-item third">
           <img
-            src="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg"
-            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-Jti0sx8I.jpg 2x"
+            src="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg"
+            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-DOrqD2-0.jpg 2x"
             alt="Fruits Basket"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg"
-            srcset="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CpNqfd6P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg"
+            srcset="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CV1Bs5rs.jpg 2x"
             alt="Mimino"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg"
-            srcset="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-BPTYHjTO.jpg 2x"
+            src="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg"
+            srcset="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-CcEFWSZS.jpg 2x"
             alt="Online Business"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg"
-            srcset="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-Dsz2tV1n.jpg 2x"
+            src="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg"
+            srcset="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-DrTpDCJH.jpg 2x"
             alt="Organic"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg"
-            srcset="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-4zL8j0uh.jpg 2x"
+            src="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg"
+            srcset="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-Cbz-uMWD.jpg 2x"
             alt="Power Pulse"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg"
-            srcset="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-DJSFoZGb.jpg 2x"
+            src="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg"
+            srcset="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-ZkgWx9AX.jpg 2x"
             alt="Ukrainian"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg"
-            srcset="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-DzPhIg_b.jpg 2x"
+            src="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg"
+            srcset="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-BcEfMdy4.jpg 2x"
             alt="Body Shape"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg"
-            srcset="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg 1x, /scriptify-portfolio-example/assets/english@2x-BMfOpF0P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg"
+            srcset="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg 1x, /scriptify-portfolio-example/assets/english@2x-Bk40y4TX.jpg 2x"
             alt="English"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg"
-            srcset="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-BBT3S_JD.jpg 2x"
+            src="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg"
+            srcset="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-Cv7WPUT1.jpg 2x"
             alt="Finances"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg"
-            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-CBqAWgQ3.jpg 2x"
+            src="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg"
+            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-Bh_YwsqM.jpg 2x"
             alt="Forms and Nature"
             width="544"
             height="314"
+            loading="lazy"
           />
         </li>
 
         <li class="covers-item fourth">
           <img
-            src="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg"
-            srcset="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-Dsz2tV1n.jpg 2x"
+            src="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg"
+            srcset="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-DrTpDCJH.jpg 2x"
             alt="Organic"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg"
-            srcset="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-4zL8j0uh.jpg 2x"
+            src="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg"
+            srcset="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-Cbz-uMWD.jpg 2x"
             alt="Power Pulse"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg"
-            srcset="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-DJSFoZGb.jpg 2x"
+            src="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg"
+            srcset="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-ZkgWx9AX.jpg 2x"
             alt="Ukrainian"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg"
-            srcset="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-DzPhIg_b.jpg 2x"
+            src="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg"
+            srcset="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-BcEfMdy4.jpg 2x"
             alt="Body Shape"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg"
-            srcset="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg 1x, /scriptify-portfolio-example/assets/english@2x-BMfOpF0P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg"
+            srcset="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg 1x, /scriptify-portfolio-example/assets/english@2x-Bk40y4TX.jpg 2x"
             alt="English"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg"
-            srcset="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-BBT3S_JD.jpg 2x"
+            src="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg"
+            srcset="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-Cv7WPUT1.jpg 2x"
             alt="Finances"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg"
-            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-CBqAWgQ3.jpg 2x"
+            src="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg"
+            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-Bh_YwsqM.jpg 2x"
             alt="Forms and Nature"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg"
-            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-Jti0sx8I.jpg 2x"
+            src="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg"
+            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-DOrqD2-0.jpg 2x"
             alt="Fruits Basket"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg"
-            srcset="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CpNqfd6P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg"
+            srcset="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CV1Bs5rs.jpg 2x"
             alt="Mimino"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg"
-            srcset="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-BPTYHjTO.jpg 2x"
+            src="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg"
+            srcset="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-CcEFWSZS.jpg 2x"
             alt="Online Business"
             width="544"
             height="314"
+            loading="lazy"
           />
         </li>
 
         <li class="covers-item fifth">
           <img
-            src="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg"
-            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CHQdn6vR.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-CBqAWgQ3.jpg 2x"
+            src="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg"
+            srcset="/scriptify-portfolio-example/assets/forms_and_nature-CSzPWw09.jpg 1x, /scriptify-portfolio-example/assets/forms_and_nature@2x-Bh_YwsqM.jpg 2x"
             alt="Forms and Nature"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg"
-            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bt2wfyc-.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-Jti0sx8I.jpg 2x"
+            src="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg"
+            srcset="/scriptify-portfolio-example/assets/fruits_basket-Bvz7cikf.jpg 1x, /scriptify-portfolio-example/assets/fruits_basket@2x-DOrqD2-0.jpg 2x"
             alt="Fruits Basket"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg"
-            srcset="/scriptify-portfolio-example/assets/mimino-CKDppfHE.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CpNqfd6P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg"
+            srcset="/scriptify-portfolio-example/assets/mimino-CM4AAveu.jpg 1x, /scriptify-portfolio-example/assets/mimino@2x-CV1Bs5rs.jpg 2x"
             alt="Mimino"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg"
-            srcset="/scriptify-portfolio-example/assets/online_business-CCAMLDUS.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-BPTYHjTO.jpg 2x"
+            src="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg"
+            srcset="/scriptify-portfolio-example/assets/online_business-B3910Mqw.jpg 1x, /scriptify-portfolio-example/assets/online_business@2x-CcEFWSZS.jpg 2x"
             alt="Online Business"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg"
-            srcset="/scriptify-portfolio-example/assets/organic-Dtx3kQJR.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-Dsz2tV1n.jpg 2x"
+            src="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg"
+            srcset="/scriptify-portfolio-example/assets/organic-CRZKuTyG.jpg 1x, /scriptify-portfolio-example/assets/organic@2x-DrTpDCJH.jpg 2x"
             alt="Organic"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg"
-            srcset="/scriptify-portfolio-example/assets/power_pulse-Dc1T_zi_.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-4zL8j0uh.jpg 2x"
+            src="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg"
+            srcset="/scriptify-portfolio-example/assets/power_pulse-uQsoeVvb.jpg 1x, /scriptify-portfolio-example/assets/power_pulse@2x-Cbz-uMWD.jpg 2x"
             alt="Power Pulse"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg"
-            srcset="/scriptify-portfolio-example/assets/ukrainian-DX3Z6P-H.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-DJSFoZGb.jpg 2x"
+            src="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg"
+            srcset="/scriptify-portfolio-example/assets/ukrainian-BaBw_ufq.jpg 1x, /scriptify-portfolio-example/assets/ukrainian@2x-ZkgWx9AX.jpg 2x"
             alt="Ukrainian"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg"
-            srcset="/scriptify-portfolio-example/assets/body_shape-BpjL38gd.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-DzPhIg_b.jpg 2x"
+            src="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg"
+            srcset="/scriptify-portfolio-example/assets/body_shape-Zq-9pvC8.jpg 1x, /scriptify-portfolio-example/assets/body_shape@2x-BcEfMdy4.jpg 2x"
             alt="Body Shape"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg"
-            srcset="/scriptify-portfolio-example/assets/english-DweDMW_9.jpg 1x, /scriptify-portfolio-example/assets/english@2x-BMfOpF0P.jpg 2x"
+            src="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg"
+            srcset="/scriptify-portfolio-example/assets/english-AjIg6zhu.jpg 1x, /scriptify-portfolio-example/assets/english@2x-Bk40y4TX.jpg 2x"
             alt="English"
             width="544"
             height="314"
+            loading="lazy"
           />
           <img
-            src="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg"
-            srcset="/scriptify-portfolio-example/assets/finances-G2h1rc_p.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-BBT3S_JD.jpg 2x"
+            src="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg"
+            srcset="/scriptify-portfolio-example/assets/finances-DU4IRPab.jpg 1x, /scriptify-portfolio-example/assets/finances@2x-Cv7WPUT1.jpg 2x"
             alt="Finances"
             width="544"
             height="314"
+            loading="lazy"
           />
         </li>
       </ul>
@@ -1009,7 +1075,9 @@
     <h2 class="reviews-hdr">Reviews</h2>
     <div class="reviews-swiper">
       <p class="reviews-err js-hidden">Not found</p>
-      <button class="reviews-err-btn js-hidden">Details</button>
+      <button class="reviews-err-btn js-hidden" aria-label="Error">
+        Details
+      </button>
       <ul id="reviews-list" class="swiper-wrapper"></ul>
       <div class="reviews-swiper-nav">
         <div class="reviews-previous-card">
@@ -1048,6 +1116,7 @@
               width="40"
               height="40"
               class="work-together-logo"
+              loading="lazy"
             />
           </picture>
         </div>
@@ -1081,7 +1150,9 @@
               class="work-together-input"
             />
           </div>
-          <button type="submit" class="work-together-btn">Send</button>
+          <button type="submit" class="work-together-btn" aria-label="Send">
+            Send
+          </button>
         </div>
       </form>
     </div>
@@ -1107,7 +1178,7 @@
 
   <div class="backdrop">
     <div class="modal">
-      <button type="button" class="close-btn">
+      <button type="button" class="close-btn" aria-label="Close">
         <svg class="icon-close" width="22" height="22">
           <use href="/scriptify-portfolio-example/assets/sprite-BQb0ssgx.svg#icon-close-btn"></use>
         </svg>
